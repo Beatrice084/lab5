@@ -13,16 +13,7 @@ $('#bookButton2').click(function(){
   $('#serviceCost').text('$99');
 })
 
-$('.SeeMore2').click(function(){
-  var $this = $(this);
-  $this.toggleClass('SeeMore2');
-  if($this.hasClass('SeeMore2')){
-      $this.text('See More');         
-  } else {
-      $this.text('See Less');
-  }
-});
-
+// source https://github.com/carolinebarriere/carolinebarriere.github.io/tree/master/SEG3125-Module5-ValidatedService
 var unavailableDates = ["06/29/2020","07/07/2020","07/10/2020"]
 const setDateFormat = "mm/dd/yy";
 
