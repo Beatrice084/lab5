@@ -113,8 +113,7 @@
                 <p class="FooterText">613.934.2309</p>
                 <h6 class="TitleFooter">Hours of Operation</h6>
                 <p class="FooterText">Monday-Friday 10am-8pm</p>
-                <p class="FooterText">Saturday 10am-6pm</p>
-                <p class="FooterText">Sunday 1pm-9pm</p>
+                <p class="FooterText">Weekends Closed</p>
               </div>
               <div class="col-sm">
                 <h6 class="TitleFooter">Contact Us</h6>
@@ -169,10 +168,28 @@
                 <div id="datepicker"></div>
               </div>
             </div>
+            <div class="step1 step2">
+              <i class="fa fa-address-card" aria-hidden="true"></i>
+              <p class="step1text">Enter your contact information</p>
+              <p class="alert alert-danger" id="errorText">Please enter your phone number in the form (613) 999-9999</p>
+              <form role="form">
+                <div class="form-group">
+                  <label for="phoneNumber">Your phone number</label>
+                  <input id="phone" type="text" name="phoneNumber" placeholder="(613) 999-9999" required class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="email">Your email</label>
+                  <div class="input-group">
+                    <input type="text" name="email" placeholder="Your email" class="form-control" required>
+                  </div>
+                </div>
+              </form>
+            </div>
             <div class="step2">
               <i class="fa fa-credit-card" aria-hidden="true"></i>
               <p class="step1text">Enter your credit card information to reserve your appointment</p>
               <!-- source https://bootstrapious.com/p/bootstrap-credit-card-form -->
+              <p class="alert alert-danger" id="creditAlert">Please enter your credit card in the form xxxx xxxx xxxx xxxx</p>
               <form role="form">
                 <div class="form-group">
                   <label for="username">Full name (on the card)</label>
@@ -181,7 +198,7 @@
                 <div class="form-group">
                   <label for="cardNumber">Card number</label>
                   <div class="input-group">
-                    <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                    <input id="cardNum" type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
                   </div>
                 </div>
                 <div class="row">
