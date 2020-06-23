@@ -1,3 +1,27 @@
+$('#bookButton').click(function(){
+  $('#serviceName').text('Break Repair');
+  $('#serviceCost').text('$65');
+})
+
+$('#bookButton1').click(function(){
+  $('#serviceName').text('Puncture Repair');
+  $('#serviceCost').text('$20');
+})
+
+$('#bookButton2').click(function(){
+  $('#serviceName').text('Maintenance');
+  $('#serviceCost').text('$99');
+})
+
+$('.SeeMore2').click(function(){
+  var $this = $(this);
+  $this.toggleClass('SeeMore2');
+  if($this.hasClass('SeeMore2')){
+      $this.text('See More');         
+  } else {
+      $this.text('See Less');
+  }
+});
 
 var unavailableDates = ["06/29/2020","07/07/2020","07/10/2020"]
 const setDateFormat = "mm/dd/yy";
@@ -14,7 +38,7 @@ function validatePhone(txtPhone) {
   var a = document.getElementById(txtPhone).value;
   // This filter asks for something like (12345), so parentheses with any number (at least 1)
   // of digits
-  var filter = /^([0-9]{10})|(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})$/;
+  var filter = /^(\([0-9]{3}\)\s+[0-9]{3}\-[0-9]{4})$/;
   if (filter.test(a)) {
       return true;
   }

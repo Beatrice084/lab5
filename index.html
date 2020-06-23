@@ -81,19 +81,19 @@
             <img src="images/breakrepair.jpg" alt="break repair" class="CircleImg">
             <h3>Break Repair</h3>
             <h6>$65</h6>
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
+            <button id="bookButton" type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
           </div>
           <div class="col-sm">
             <img src="images/puncture.jpg" alt="puncture" class="CircleImg">
             <h3>Puncture Repair</h3>
             <h6>$20</h6>
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
+            <button id="bookButton1" type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
           </div>
           <div class="col-sm">
             <img src="images/maintance.jpg" alt="maintence" class="CircleImg">
             <h3>Maintenance</h3>
             <h6>$99</h6>
-            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
+            <button id="bookButton2" type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
           </div>
         </div>
     </div>
@@ -112,8 +112,8 @@
                 <p class="FooterText">85 King Edward St.</p>
                 <p class="FooterText">613.934.2309</p>
                 <h6 class="TitleFooter">Hours of Operation</h6>
-                <p class="FooterText">Monday-Friday 10am-8pm</p>
-                <p class="FooterText">Weekends Closed</p>
+                <p class="FooterText">Monday-Friday: 10am-8pm</p>
+                <p class="FooterText">Weekends: Closed</p>
               </div>
               <div class="col-sm">
                 <h6 class="TitleFooter">Contact Us</h6>
@@ -142,10 +142,10 @@
             </button>
           </div>
           <div class="modal-body">
-            <h2 class="modal-text">Break Repair</h2>
-            <h2 class="modal-text">$65</h2>
+            <h2 class="modal-text" id="serviceName">Break Repair</h2>
+            <h2 class="modal-text" id="serviceCost">$65</h2>
             <div class="time-div">
-              <i class="fa fa-clock-o clock"></i>
+              <i class="fa fa-clock-o professional"></i>
               <p class="modal-time">30 min</p>
             </div>
             <div class="step1">
@@ -169,7 +169,7 @@
               </div>
             </div>
             <div class="step1 step2">
-              <i class="fa fa-address-card" aria-hidden="true"></i>
+              <i class="fa fa-envelope professional" aria-hidden="true"></i>
               <p class="step1text">Enter your contact information</p>
               <p class="alert alert-danger" id="errorText">Please enter your phone number in the form (613) 999-9999</p>
               <form role="form">
@@ -186,7 +186,7 @@
               </form>
             </div>
             <div class="step2">
-              <i class="fa fa-credit-card" aria-hidden="true"></i>
+              <i class="fa fa-credit-card professional" aria-hidden="true"></i>
               <p class="step1text">Enter your credit card information to reserve your appointment</p>
               <!-- source https://bootstrapious.com/p/bootstrap-credit-card-form -->
               <p class="alert alert-danger" id="creditAlert">Please enter your credit card in the form xxxx xxxx xxxx xxxx</p>
@@ -225,7 +225,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Confirm Booking</button>
           </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
