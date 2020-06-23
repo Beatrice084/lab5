@@ -1,0 +1,215 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+<!-- TitleImage.jpg https://i2.wp.com/www.kingtumblr.com/wp-content/uploads/2018/05/Amazing-Mountain-Bike-Stunts-6.jpg -->
+<!-- TitleImage2.jpg https://www.queenstownnz.co.nz/stories/post/mountain-biking-for-pros/ -->
+<!-- AddressImage.jpg https://www.pinterest.ca/pin/195695546284360463/ -->
+<!-- black_square.jpg https://www.fg-a.com/black-backgrounds.shtml -->
+<!-- AddressImage3.png https://www.pinterest.ca/pin/131448882851851507/ -->
+<!-- maintence.png https://www.menifeebicycles.com/articles/bike-maintenance-guidelines-pg119.htm -->
+<!-- breakrepair.pgn https://ae01.alicdn.com/kf/HTB1FqmIk_qWBKNjSZFxq6ApLpXaI.jpg_q50.jpg -->
+<!-- puncture.png https://www.aliexpress.com/i/32896550894.html -->
+<!-- StaffPhoto.pgn https://www.northparkbikeshop.com/staff -->
+<!-- AddressImage4 https://www.singletracks.com/uncategorized/good-shop-bad-shop-what-makes-or-breaks-an-lbs-part-1/attachment/peak-bike-shop/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Module 5 - Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"    />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="w3-sidebar w3-bar-block w3-animate-right" style="display:none;z-index:5;width:200px;right:0;" id="mySidebar">
+      <a href="#address" class="w3-bar-item w3-button"><i class="fa fa-map-marker service sidenavIcon" aria-hidden="true"></i><p class="service">Address</p></a>
+      <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-wrench service sidenavIcon" aria-hidden="true"></i><p class="service">Services</p></a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users service sidenavIcon" aria-hidden="true"></i><p class="service">The team</p></a>
+      <a href="#footer" class="w3-bar-item w3-button"><i class="fa fa-envelope service sidenavIcon" aria-hidden="true"></i><p class="service">Contact us</p></a>
+      <a href="#footer" class="w3-bar-item w3-button"><i class="fa fa-clock-o service sidenavIcon" aria-hidden="true"></i><p class="service">Store Hours</p></a>
+      <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+    </div>
+    <div class="HeaderDiv">
+        <h1>Al's Bikes</h1>
+        <img src="images/logo.jpg" alt="logo" class="logo">
+        <button class="btn hamButton" onclick="w3_open()"><i class="fa fa-bars hamburger" aria-hidden="true"></i></button>
+    </div>
+    <div class="TitleContainer">
+        <img src="images/TitleImage2.jpg" alt="Mountain Biker Jumping" class="TitleImage">
+        <h3 class="TitleImageText">"Adventure Starts Here."</h3>
+        <h6 class="TitleImageAuthor">-Al Murray, Owner</h6>
+    </div>
+    <div class="TitleContainer" id="address">
+        <img src="images/AddressImage4.jpg" alt="Inside bike shop" class="AddressImage">
+        <div class="AddressDiv">
+            <h3 class="AlsBikes">Al's Bikes</h3>
+            <h6 class="TagLine">Ottawa's Oldest Bike Shop</h6>
+            <h3 class="Address">85 King Edward St.</h3>
+        </div>
+    </div>
+    <div class="container" id="services">
+        <div class="row">
+          <div class="col-sm">
+            <img src="images/breakrepair.jpg" alt="break repair" class="CircleImg">
+            <h3>Break Repair</h3>
+            <h6>$65</h6>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
+          </div>
+          <div class="col-sm">
+            <img src="images/puncture.jpg" alt="puncture" class="CircleImg">
+            <h3>Puncture Repair</h3>
+            <h6>$20</h6>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
+          </div>
+          <div class="col-sm">
+            <img src="images/maintance.jpg" alt="maintence" class="CircleImg">
+            <h3>Maintenance</h3>
+            <h6>$99</h6>
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
+          </div>
+        </div>
+    </div>
+    <div class="StaffPicture" id="team">
+        <img src="images/StaffPhoto.jpg" alt="Staff picture" class="StaffImage">
+        <div class="StaffDiv">
+            <h3>The Al's Bikes team</h3>
+            <h6 class="staffText">Al's Bikes wouldn't work without our amazing staff! We couldn't ask for a better bike-family!</h6>
+        </div>
+    </div>
+    <footer>
+        <div class="container" id="footer">
+            <div class="row">
+              <div class="col-sm">
+                <h6 class="TitleFooter">Al's Bikes</h6>
+                <p class="FooterText">85 King Edward St.</p>
+                <p class="FooterText">613.934.2309</p>
+                <h6 class="TitleFooter">Hours of Operation</h6>
+                <p class="FooterText">Monday-Friday 10am-8pm</p>
+                <p class="FooterText">Saturday 10am-6pm</p>
+                <p class="FooterText">Sunday 1pm-9pm</p>
+              </div>
+              <div class="col-sm">
+                <h6 class="TitleFooter">Contact Us</h6>
+                <!-- Input from https://getbootstrap.com/docs/4.0/components/forms/ -->
+                <input class="form-control" placeholder="Your name">
+                <input class="form-control"  placeholder="Your Email">
+                <input class="form-control" placeholder="Subject">
+                <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
+                <button type="button" class="btn btn-light">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="ModalDiv">
+              <h5>Al's Bikes</h5>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2 class="modal-text">Break Repair</h2>
+            <h2 class="modal-text">$65</h2>
+            <div class="time-div">
+              <i class="fa fa-clock-o clock"></i>
+              <p class="modal-time">30 min</p>
+            </div>
+            <div class="step1">
+                <i class="fa fa-user professional" aria-hidden="true"></i>
+                <p class="step1text">Choose your professional</p>
+                <div class="form-group">
+                  <select class="form-control" id="professionalSelect">
+                    <option value="0">First available</option>
+                    <option value="1">Heather</option>
+                    <option value="2">Ben</option>
+                    <option value="3">Al</option>
+                    <option value="4">Andrea</option>
+                  </select>
+                </div>
+            </div>
+            <div class="step1 step2">
+              <i class="fa fa-calendar professional" aria-hidden="true"></i>
+              <p class="step1text">Choose your date</p>
+              <div class="datepickercontainer">
+                <div id="datepicker"></div>
+              </div>
+            </div>
+            <div class="step2">
+              <i class="fa fa-credit-card" aria-hidden="true"></i>
+              <p class="step1text">Enter your credit card information to reserve your appointment</p>
+              <!-- source https://bootstrapious.com/p/bootstrap-credit-card-form -->
+              <form role="form">
+                <div class="form-group">
+                  <label for="username">Full name (on the card)</label>
+                  <input type="text" name="username" placeholder="Jason Doe" required class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="cardNumber">Card number</label>
+                  <div class="input-group">
+                    <input type="text" name="cardNumber" placeholder="Your card number" class="form-control" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label><span class="hidden-xs">Expiration</span></label>
+                      <div class="input-group">
+                        <input type="number" placeholder="MM" name="" class="form-control" required>
+                        <input type="number" placeholder="YY" name="" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group mb-4">
+                      <label data-toggle="tooltip" title="Three-digits code on the back of your card">CVV
+                        <i class="fa fa-question-circle"></i>
+                      </label>
+                      <input type="text" required class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

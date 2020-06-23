@@ -1,0 +1,204 @@
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+/* Bootstrap default font-family is Helvetica Neue */
+h1 {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    display: inline-block !important;
+  }
+
+.HeaderDiv {
+  display: inline;
+}
+
+.hamburger {
+  font-size: 40px;
+}
+
+.hamButton {
+  margin-right: 40px;
+  margin-top: 20px;
+  float: right;
+}
+
+.TitleImage {
+    width: 100%;
+}
+
+.AddressImage {
+  width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  filter: brightness(40%);
+}
+
+.AddressDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: yellow;
+}
+
+.TitleContainer {
+  position: relative;
+  text-align: center;
+}
+
+.TitleImageText {
+  top: 20px;
+  left: 50px;
+  position: absolute
+}
+
+.TitleImageAuthor {
+  top: 50px;
+  left: 225px;
+  position: absolute;
+}
+
+
+
+.StaffDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: yellow;
+}
+
+.CircleImg {
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+h6 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+.btn-dark {
+  font-family: 'Rubik', sans-serif;
+}
+
+.col-sm {
+  text-align: center;
+}
+
+.StaffPicture {
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.StaffImage {
+  filter: brightness(40%);
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+}
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.FooterText {
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+  margin: 0;
+}
+
+.TitleFooter {
+  text-align: left;
+  color: white;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.logo {
+  height: 20px;
+  width:  20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.modal-text {
+  color: #4d5055;
+  text-align: center;
+  margin: 0;
+}
+
+.clock{
+  font-size: 30px;
+  color: grey;
+  margin: 0;
+}
+
+.modal-time {
+  display: inline-block;
+}
+
+.time-div {
+  text-align: center;
+  color: grey;
+}
+
+.professional {
+  font-size: 25px;
+  color: darkslategrey;
+}
+
+.step1text {
+  display: inline-block;
+  color: darkslategrey;
+}
+
+.step1 {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.step2 {
+  margin-top: 15px;
+}
+
+.datepickercontainer {
+  text-align: center;
+}
+
+#datepicker {
+  display: inline-block;
+}
+
+.hamburger {
+  float: right;
+}
+
+.service {
+  display: inline-block;
+  margin: 0;
+}
+
+.sidenavIcon {
+  margin-right: 5px;
+}
